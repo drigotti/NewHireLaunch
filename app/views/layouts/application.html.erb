@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Data can be added from config/application.yml -->
+  <title>New Hire - new team member onboarding software</title>
+  <meta name="description" content="Get new hires onboarded more quickly (and less painfully).">
+  <meta property="og:site_name" content="New Hire Onboarding Software"/>
+  <meta property="og:url" content="<%= root_url %>"/>
+  <!-- End Meta Data -->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <link rel="shortcut icon" href="/assets/favicon.ico" >
+  <style>
+  .logo a {
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body>  
+
+<div class="container">
+  <img alt="full screen background image" style="opacity:.3;" src="/assets/background-new.jpg" id="full-screen-background-image" /> 
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+      <p class="logo text-center"><a href="/">NewHire.io</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+      <p class="lead text-center">get your new employees excited and ready to work</p>
+    </div>
+  </div>
+
+  <%= yield %>
+
+  <div class="row" style="margin-bottom:40px;margin-top:50px;">
+    <div class="col-lg-2 col-lg-offset-2 col-xs-6 text-center">
+      <i class="fa fa-cogs fa-5x"></i>
+    </div>
+    <div class="col-lg-6 col-xs-6">
+        <p class="lead" style="margin-bottom:5px;">Scheduled communications for new hires</p>
+        You've just signed on the perfect new hire for your team. Now it's time for her to work. Let NewHire.io help get her up to speed on your company culture, policies, and practicies, without overloading her on day one.
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom:40px;">
+    <div class="col-lg-6 col-lg-offset-2 col-xs-6">
+        <p class="lead" style="margin-bottom:5px;">Set it and forget it</p>
+        Every time you hire a new employe, you spend the day explaining how to work the printer, when the 401k forms need to be submitted, how to sign up for health insurance, and so forth. Write it once, schedule it, and your done. When you add a new employee to NewHire.io, they'll receive the right communications, when they need them.
+    </div>
+    <div class="col-lg-2 col-xs-6 text-center">
+      <i class="fa fa-envelope fa-4x"></i>
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom:40px;">
+    <div class="col-lg-2 col-lg-offset-2  col-xs-6 text-center">
+      <i class="fa fa-smile-o fa-4x"></i>
+    </div>
+    <div class="col-lg-6 col-xs-6">
+        <p class="lead" style="margin-bottom:5px;">Great for HR people and companies without HR people</p>
+        We want to make companies more efficient. NewHire.io makes new employees feel empowered with the right information while taking the load off HR and management so you don't have to sweat the small stuff.
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
