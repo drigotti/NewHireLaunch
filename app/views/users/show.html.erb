@@ -1,14 +1,14 @@
 <div class="row" style="margin-top:20px;">
   	<div class="col-lg-6 col-lg-offset-3 text-center">
   		<!-- Confirmation and Incentive Copy -->
-		<p><i><strong>We got you, thanks for signing up!</i></strong><br />Help spread the word by sharing your unique URL below. <% if @user.count %>So far your referral count is <%= @user.count %>.<% else %><% end %></p>
+		<p><i><strong>We got you, thanks for signing up!</i></strong><br />Help spread the word by sharing your unique URL below. Refer 3 friends and get 50% off your first month! <% if @user.count %>So far your referral count is <%= @user.count %>.<% else %><% end %></p>
 		<!-- End Confirmation and Incentive Copy -->
 
 		<!-- Referral URL -->
 		<p><input type="email" class="form-control url" value="<%= "#{root_url}?code=#{@user.code}" %>"></p>
 		<!-- End Referral URL -->
 
-	    <a class="btn btn-twitter" href="https://twitter.com/intent/tweet?related=<%= ENV['TWITTER_HANDLE'] %>&url=<%=u "#{root_url}?code=#{@user.code}"%>&text=I+just+signed+up+for+@newhirehio.+Join+me+at">
+	    <a class="btn btn-twitter" href="https://twitter.com/intent/tweet?related=<%= ENV['TWITTER_HANDLE'] %>&url=<%=u "#{root_url}?code=#{@user.code}"%>&text=I+just+signed+up+for+@newhirehio+to+onboard+new+hires+faster+and+easier.+Join+me+at">
   			<i class="fa fa-twitter fa-lg"></i> Twitter</a>
  	    <a class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%=u "#{root_url}?code=#{@user.code}"%>">
   			<i class="fa fa-facebook fa-lg"></i> Facebook</a>
