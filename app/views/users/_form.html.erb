@@ -1,8 +1,16 @@
 <%= form_for(@user) do |f| %>
 
-  <!-- Sign Up Form -->
-  <div class="row" style="margin-top:20px;">
+  <div class="row">
     <div class="col-lg-6 col-lg-offset-3">
+       <p style="font-family: 'Architects Daughter', cursive;font-size:20px;margin-top:20px;margin-bottom:0px;" class="text-center">Be awesome and add sign up below to be notified when it launches</p>
+    </div>
+  </div>
+  <!-- Sign Up Form -->
+  <div class="row" style="margin-top:0px;">
+    <div class="col-lg-1 col-lg-offset-3" >
+      <img src="/assets/arrow.png" width="100%;" style="margin-top:5px;">
+    </div>
+    <div class="col-lg-5">
       <div class="input-group field">
         <%= f.text_field :email, :class => "form-control signup-form", :placeholder => "Email address" %>
         <%= f.hidden_field :code %>
