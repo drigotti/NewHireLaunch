@@ -10,12 +10,13 @@
 		<!-- End Referral URL -->
 
 	    <a class="btn btn-twitter" href="https://twitter.com/intent/tweet?related=newhireio&url=<%=u "#{root_url}?code=#{@user.code}"%>&text=I+just+signed+up+for+@newhireio,+a+tool+to+onboard+new+hires+faster+and+easier.+Join+me+at" target="_blank">
-  			<i class="fa fa-twitter fa-lg"></i> Twitter</a>
+  			<i class="fa fa-twitter fa-lg" style="margin-right:5px;"></i> Twitter</a>
  	    <a class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%=u "#{root_url}?code=#{@user.code}"%>" target="_blank">
-  			<i class="fa fa-facebook fa-lg"></i> Facebook</a>
+  			<i class="fa fa-facebook fa-lg" style="margin-right:5px;"></i> Facebook</a>
 	    <a class="btn btn-gplus" href="https://plus.google.com/share?url=<%= "#{root_url}?code=#{@user.code}" %>" onclick="javascript:window.open(this.href,
 	    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-  			<i class="fa fa-google-plus fa-lg"></i> Google+</a>
+  			<i class="fa fa-google-plus fa-lg" style="margin-right:5px;"></i> Google+</a>
+  		<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%=u "#{root_url}?code=#{@user.code}"%>&amp;title=NewHire.io&amp;summary=onboard%20new%20hires%20faster%20and%20easier." class="btn btn-linkedin" target="blank"><i class="fa fa-linkedin fa-lg" style="margin-right:5px;"></i> LinkedIn</a>
 	</div>
 </div>
 
@@ -32,7 +33,11 @@
 	background-color: #d34836;
 	color: #fff;
 }
-.btn-gplus:hover, .btn-facebook:hover, .btn-twitter:hover {
+.btn-linkedin {
+	background-color: #007bb6;
+	color: #fff;
+}
+.btn-gplus:hover, .btn-linkedin:hover, .btn-facebook:hover, .btn-twitter:hover {
 	color: #d4d4d4;
 }
 </style>
